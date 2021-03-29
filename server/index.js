@@ -3,10 +3,12 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const fetch = require("node-fetch");
 
-const secret = require("./secret");
+const val = require("./secret");
 const { checkResponseStatus } = require("./utils");
 
 const app = express();
+const secret = process.env.FINNHUB_API_KEY || val;
+
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "..", "build")));
 
