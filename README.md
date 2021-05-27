@@ -54,4 +54,4 @@ In order to run the repository locally you will need to install dependencys, bui
 
 ### Production
 
-The application is not currently deployed anywhere. A docker file has been provided in the event that the application is needed in containerised form. To build this run `docker build .` from the root folder. To run the container locally you have to take note of the build image tag e.g. `d64fea91cb33` and then run `docker run -p XXXX:3000 -d <BUILD_TAG>` where `XXXX` is a port you want to expose the container on.
+The application is deployed [here](https://fm-manager-tm.herokuapp.com/). A docker file has been provided in the event that the application is needed in containerised form. To build this run `docker build .` from the root folder. To run the container locally you have to take note of the build image tag e.g. `d64fea91cb33` and then run `docker run -p XXXX:3000 -d <BUILD_TAG>` where `XXXX` is a port you want to expose the container on.
